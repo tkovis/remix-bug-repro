@@ -13,7 +13,7 @@ import { signInCounter4 } from "~/metrics/signInCounter4.server";
 
 export const loader = async ({ request }: LoaderArgs) => {
   const userId = await getUserId(request);
-  if (userId) return redirect("/");
+  //if (userId) return redirect("/");
   return json({});
 };
 
